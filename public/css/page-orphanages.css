@@ -1,0 +1,106 @@
+#page-orphanages {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+}
+
+aside {
+    width: clamp(24rem, 25vw, 44rem);
+    background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%);
+    padding: clamp(3rem, 5vw, 8rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside h2 {
+    margin-top: 6.4rem;
+
+    font: 800 clamp(2rem, 5vw, 3.6rem)/1.1 'Nunito', sans-serif;
+}
+
+aside p {
+    margin-top: 2.4rem;
+    font: 400 1.6rem/1.5 'Nunito', sans-serif;
+}
+
+aside footer p {
+    margin-top: .8rem;
+}
+
+#mapid {
+    width: 100%;
+    height: 100%;
+
+    animation-delay: 200ms;
+}
+
+/* button */
+
+a.create-orphanage {
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+
+    z-index: 10;
+
+    width: 6.4rem;
+    height: 6.4rem;
+    background: #15C3D6;
+    border: 0;
+    border-radius: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 200ms;
+}
+
+a.create-orphanage:hover {
+    background: #17D6EB;
+}
+
+.leaflet-popup-content-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+.leaflet-popup-content {
+    color: #0089A5;
+    margin: .8rem 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leaflet-popup-content a {
+    width: 4rem;
+    height: 4rem;
+    background: #15C3D6;
+    box-shadow: 17.2868px 27.6589px 41.4884px rgba(23, 142, 166, 0.16);
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: background-color .2s;
+}
+
+.leaflet-popup-content a:hover {
+    background: #17D6EB;
+}
+
+.leaflet-popup-tip {
+    display: none;
+}
+
+.leaflet-container {
+    font: 700 2rem/1 'Nunito', sans-serif;
+
+    z-index: 5;
+}
